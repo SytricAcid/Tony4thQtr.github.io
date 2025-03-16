@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>ICT 2ND QUARTER</title>
+    <link rel="stylesheet" href="poopy.css">
+    <script>
+        function showAlert() {
+            alert("Hello! This is a pop-up box.");
+        }
+
+        function calculateSum() {
+            let x = parseFloat(document.getElementById("num1").value);
+            let y = parseFloat(document.getElementById("num2").value);
+            if (!isNaN(x) && !isNaN(y)) {
+                document.getElementById("sumResult").innerHTML = "Sum: " + (x + y);
+            } else {
+                document.getElementById("sumResult").innerHTML = "Please enter valid numbers.";
+            }
+        }
+
+        function checkNumber() {
+            let num = parseInt(document.getElementById("numInput").value);
+            if (num > 0) {
+                document.getElementById("ifResult").innerHTML = "The number is positive.";
+            } else {
+                document.getElementById("ifResult").innerHTML = "The number is zero or negative.";
+            }
+        }
+
+        function countWhileLoop() {
+            let count = 1;
+            let text = "";
+            while (count <= 5) {
+                text += "Count: " + count + "<br>";
+                count++;
+            }
+            document.getElementById("whileResult").innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    <h1> E-Portfolio 2nd Quarter </h1>
+    <h2> Anthony Miguel T. Ferrer </h2>
+    <hr>
+
+    <h1> Pop-up Boxes </h1>
+    <div class="info-box">
+        <p>Pop-up boxes are used to alert users, confirm actions, or prompt for input.</p>
+    </div>
+    <div class="sample-box">
+        <button onclick="showAlert()">Click me for a Pop-up!</button>
+    </div>
+
+    <h1> Functions (JavaScript) </h1>
+    <div class="info-box">
+        <p>Functions are blocks of code designed to perform a specific task.</p>
+    </div>
+    <div class="sample-box">
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="calculateSum()">Calculate Sum</button>
+        <p id="sumResult"></p>
+    </div>
+
+    <h1> If-Statements </h1>
+    <div class="info-box">
+        <p>If-statements execute different code based on conditions.</p>
+    </div>
+    <div class="sample-box">
+        <input type="number" id="numInput" placeholder="Enter a number">
+        <button onclick="checkNumber()">Check</button>
+        <p id="ifResult"></p>
+    </div>
+
+    <h1> While Loop </h1>
+    <div class="info-box">
+        <p>While loops execute a block of code as long as a condition is true.</p>
+    </div>
+    <div class="sample-box">
+        <button onclick="countWhileLoop()">Start Counting</button>
+        <p id="whileResult"></p>
+    </div>
+</body>
+</html>
