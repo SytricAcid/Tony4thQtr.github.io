@@ -1,0 +1,218 @@
+h1 { 
+    font-family: Candara;
+    color: #8FD694;
+    text-align: center
+}
+
+h2 { 
+    font-family: Candara;
+    font-size: 100%;
+    color: #77AD78;
+    text-align: center;
+
+}
+
+h3 { 
+    font-family: Candara;
+    font-size: 100%;
+    color: #77AD78;
+
+}
+
+h4 { 
+    font-family: Candara;
+    font-size: 200%;
+    color: #77AD78;
+    text-align: center;
+    background-color: #EEF5DB;
+    float: left;
+
+}
+
+a {
+    color: #4F6D7A; 
+    text-decoration: none; 
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid white;
+    font-family: Candara;
+    font-size: 200%;
+    text-align: center;
+    background-color: #D7DAE5;
+}
+
+body {
+    background-image: url('download.png');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+p {
+    margin: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.large {
+    max-height: 300%;
+    max-width: 300%;
+    font-family: Candara;
+    font-size: 110%;
+    color: #0E1C36;
+    text-align: center;
+}
+
+.larger {
+    font-family: Candara;
+    font-size: 110%;
+    color: #0E1C36;
+    text-align: center;
+}
+
+.small {
+    font-family: Candara;
+    font-size: 80%;
+    color: #0E1C36;
+    text-align: justify;
+}
+
+.smaller {
+    font-family: Candara;
+    font-size: 150%;
+    color: #4F6367;
+    text-align: justify;
+}
+
+.sent { 
+    font-family: Candara;
+    font-size: 140%;
+    color: #AFCBFF;
+    background-color: #FFEDE1;
+    float: right;
+}
+
+.carousel-container {
+    width: 90%; 
+    max-width: 350px;
+    margin: 20px auto; 
+    clear: both; 
+    position: relative;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.carousel {
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.carousel-track {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-item {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 600%;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+input#slide1:checked ~ .carousel .carousel-track {
+    transform: translateX(0%);
+}
+
+input#slide2:checked ~ .carousel .carousel-track {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .carousel .carousel-track {
+    transform: translateX(-200%);
+}
+
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input#slide1:checked ~ .carousel-nav label[for="slide1"],
+input#slide2:checked ~ .carousel-nav label[for="slide2"],
+input#slide3:checked ~ .carousel-nav label[for="slide3"] {
+    background-color: #333;
+}
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 80%;
+            max-width: 600px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .videos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .videos video {
+            width: 80%;
+            max-width: 600px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+
+
+
